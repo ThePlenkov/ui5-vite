@@ -1,0 +1,33 @@
+{
+  "name": "@ui5/vite-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-first Vite plugin monorepo for serving UI5 / Fiori launchpad applications",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test",
+    "lint": "nx run-many -t lint",
+    "typecheck": "nx run-many -t typecheck",
+    "dev:launchpad": "nx serve launchpad-example",
+    "clean": "nx reset && rm -rf node_modules dist"
+  },
+  "devDependencies": {
+    "@nx/js": "20.3.0",
+    "@nx/node": "20.3.0",
+    "@nx/workspace": "20.3.0",
+    "@types/node": "22.12.0",
+    "nx": "20.3.0",
+    "tsup": "8.3.5",
+    "tsx": "^4.22.4",
+    "typescript": "5.6.3",
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "vite-plugin-ui5-launchpad",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/vite-plugin-ui5-launchpad/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run build --workspace=packages/vite-plugin-ui5-launchpad"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run typecheck --workspace=packages/vite-plugin-ui5-launchpad"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run test --workspace=packages/vite-plugin-ui5-launchpad"
+      }
+    }
+  }
+}

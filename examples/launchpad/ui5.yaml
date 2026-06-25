@@ -1,0 +1,16 @@
+{
+  "specVersion": "4.0",
+  "type": "application",
+  "metadata": {
+    "name": "launchpad.example"
+  },
+  "framework": {
+    "name": "OpenUI5",
+    "version": "1.136.0",
+    "libraries": [
+      { "name": "sap.ui.core" },
+      { "name": "sap.m" },
+      { "name": "sap.ushell" }
+    ]
+  }
+}
