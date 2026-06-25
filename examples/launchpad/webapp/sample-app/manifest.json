@@ -1,0 +1,18 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "ns.sample",
+    "type": "application",
+    "applicationVersion": { "version": "0.0.1" },
+    "title": "Hello World",
+    "description": "A minimal UI5 app embedded in the local Fiori Launchpad."
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "ns.sample.view.Hello",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    }
+  }
+}

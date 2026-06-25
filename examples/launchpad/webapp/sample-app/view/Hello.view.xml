@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+  <App id="helloApp">
+    <Page title="Hello from the local Fiori Launchpad">
+      <content>
+        <VBox alignItems="Center" justifyContent="Center" height="100%">
+          <Title text="Hello, UI5!" level="H1" />
+          <Text text="This app is served by Vite via @ui5/vite-plugin-ui5-launchpad." />
+        </VBox>
+      </content>
+    </Page>
+  </App>
+</mvc:View>

@@ -1,0 +1,36 @@
+{
+  "name": "@ui5/vite-plugin-ui5-launchpad",
+  "version": "0.1.0",
+  "description": "Vite plugin that serves a local SAP Fiori Launchpad sandbox for UI5 app development",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./templates": {
+      "types": "./dist/templates.d.ts",
+      "import": "./dist/templates.js"
+    },
+    "./apps": {
+      "types": "./dist/apps.d.ts",
+      "import": "./dist/apps.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "node --test --import tsx test/**/*.test.ts"
+  },
+  "dependencies": {
+    "@ui5/vite-plugin-ui5": "0.1.0"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0 || ^6.0.0 || ^7.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.nx/
+.cache/
+*.log
+.DS_Store
+.vite/
+.research/
+coverage/
